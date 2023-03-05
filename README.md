@@ -18,7 +18,7 @@ Es decir, un cubo no es más que un caso particular de un hexaedro en el que tod
 
 Aunque el enunciado del ejercicio se refiere al caso concreto de Cubos, el ejercicio se ha desarrollado por completo a nivel de hexaedro por los siguientes motivos:
 
-- A la hora de definir un cubo, basta con definir un hexaedro al que se le de el mismo valor para todas sus dimensiones.
+- A la hora de definir un cubo, basta con definir un hexaedro al que se de el mismo valor para todas sus dimensiones.
 - La intersección de dos hexaedros devolverá otro hexaedro pero la intersección de dos cubos también devolverá siempre un hexaedro (aunque en casos específicos pueda ser un cubo).
 - Aunque el ejercicio solicita exclusivamente devolver el volumen de la intersección, y dado que este en realidad no es más que una propiedad del hexaedro formado por la misma, la solución diseñada no devuelve directamente dicho volumen, sino que devuelve el hexaedro formado por dicha intersección, del cual se puede conocer su volumen solicitando simplemente el valor de dicha propiedad.
 
