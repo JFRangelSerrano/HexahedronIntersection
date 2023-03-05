@@ -34,7 +34,7 @@ La solución ha sido implementada mediante lenguage C#.NET usando el IDE Visual 
 
 ## Solución matemática
 
-La solución matemática se ha basado en la aplicación de la técnica "Divide y vencerás". Para determinar el hexaedro formado por la intersección de los dos originales, el problema se ha simplificado en obtener para cada dimensión, el segmento común a ambos hexaedros originales. Sólo en caso de que en todas las dimensiones exista dicho segmento, existirá intersección, siendo la longitud de dichos segmentos las distintas dimensiones del hexaedro buscado y pudiendo también calcular en base a ellos el punto central del mismo. Esta solución es válida por supuesto en las secciones positivas y negativas de cada uno de los 3 ejes X, Y y Z.
+La solución matemática se ha basado en la aplicación de la técnica "Divide y vencerás". Para determinar el hexaedro formado por la intersección de los dos originales, el problema se ha simplificado en obtener para cada dimensión, el segmento común a ambos hexaedros originales. Sólo en caso de que en todas las dimensiones exista dicho segmento, existirá intersección, siendo la longitud de dichos segmentos las distintas dimensiones del hexaedro buscado y pudiendo también calcular en base a ellos el punto central del mismo. Esta solución es válida por supuesto en las partes positivas y negativas de cada uno de los 3 ejes X, Y y Z.
 
 ## Detalles a considerar sobre el código
 
