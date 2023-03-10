@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HexahedronIntersectionAPI</name>
+    </assembly>
+    <members>
+        <member name="M:HexahedronIntersectionAPI.ApplicationServices.HexahedronServices.HandlerCommand(HexahedronIntersectionAPI.Commands.CreateHexahedronCommand)">
+            <summary>
+            Executes a command to create an hexahedron
+            </summary>
+            <param name="createHexahedronCommand">Create command</param>
+            <returns></returns>
+        </member>
+        <member name="M:HexahedronIntersectionAPI.ApplicationServices.HexahedronServices.HandlerCommand(HexahedronIntersectionAPI.Commands.RemoveHexahedronCommand)">
+            <summary>
+            Executes a command to remove an hexahedron
+            </summary>
+            <param name="removeHexahedronCommand">Remove command</param>
+            <returns></returns>
+        </member>
+        <member name="M:HexahedronIntersectionAPI.ApplicationServices.HexahedronServices.GetHexahedron(System.Guid)">
+            <summary>
+            Gets an hexahedron by Id
+            </summary>
+            <param name="id">Hexahedron Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:HexahedronIntersectionAPI.ApplicationServices.HexahedronServices.GetIntersection(System.Guid,System.Guid,System.Guid)">
+            <summary>
+            Returns intersection hexahedron between two hexahedrons if exists. Else, returns null.
+            </summary>
+            <param name="hexahedronOneId">First hexahedron Id</param>
+            <param name="hexahedronTwoId">Second hexahedron Id</param>
+            <param name="hexahedronIntersectionId">Intersection hexahedron Id</param>
+        </member>
+        <member name="M:HexahedronIntersectionAPI.ApplicationServices.HexahedronServices.GetSegmentIntersectionOnAxis(HexahedronIntersectionDomain.Entities.Hexahedron,HexahedronIntersectionDomain.Entities.Hexahedron,HexahedronIntersectionDomain.Axis)">
+            <summary>
+            Returns common segment on a axis between two hexahedrons if exists. Else, returns null.
+            </summary>
+            <param name="hexahedron1">First hexahedron</param>
+            <param name="hexahedron2">Second hexahedron</param>
+            <param name="axis">Axis</param>
+            <returns></returns>
+        </member>
+        <member name="M:HexahedronIntersectionAPI.ApplicationServices.HexahedronServices.GetSegmentIntersection(HexahedronIntersectionDomain.ValueObjects.Segment,HexahedronIntersectionDomain.ValueObjects.Segment)">
+            <summary>
+            Returns intersection segment between two segment if exists. Else, returns null.
+            </summary>
+            <param name="segment1">First segment</param>
+            <param name="segment2">Second segment</param>
+            <returns></returns>
+        </member>
+        <member name="M:HexahedronIntersectionAPI.ApplicationServices.HexahedronServices.ExistsIntersection(HexahedronIntersectionDomain.ValueObjects.Segment,HexahedronIntersectionDomain.ValueObjects.Segment)">
+            <summary>
+            Determines if exists intersection between two segments
+            </summary>
+            <param name="segment1">First segment</param>
+            <param name="segment2">Second segment</param>
+            <returns></returns>
+        </member>
+        <member name="T:HexahedronIntersectionAPI.Queries.HexahedronQueries">
+            <summary>
+            Represents queries to do on the repository
+            </summary>
+        </member>
+        <member name="M:HexahedronIntersectionAPI.Queries.HexahedronQueries.GetHexahedronByIdAsync(System.Guid)">
+            <summary>
+            Query to get an hexahedron by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

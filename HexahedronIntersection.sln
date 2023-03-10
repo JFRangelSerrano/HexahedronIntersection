@@ -3,11 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HexahedronIntersection", "HexahedronIntersection\HexahedronIntersection.csproj", "{A90A0E0E-EACE-4AAD-B428-25AFBF0E9A8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HexahedronIntersectionDomain", "HexahedronIntersectionDomain\HexahedronIntersectionDomain.csproj", "{A90A0E0E-EACE-4AAD-B428-25AFBF0E9A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexahedronIntersectionUnitTest", "HexahedronIntersectionUnitTest\HexahedronIntersectionUnitTest.csproj", "{51E8929C-546B-49BB-A44C-016BF613F2DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HexahedronIntersectionAPI", "HexahedronIntersectionAPI\HexahedronIntersectionAPI.csproj", "{6DD26BD3-6363-4BA6-B3A6-258916D58FC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexahedronIntersectionApp", "HexahedronIntersectionApp\HexahedronIntersectionApp.csproj", "{0994492C-2E34-46A9-8995-E4532E7C3301}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{9BD2C931-4417-48EF-AAA7-B50DC5CB61A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{35D8E867-F875-4DC9-8761-208412E71C3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E1D205CF-D57F-42CC-9BCE-0C7CBC6E8A7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HexahedronIntersectionInfrastructure", "HexahedronIntersectionInfrastructure\HexahedronIntersectionInfrastructure.csproj", "{7181368B-6957-4D99-82A2-5CA646CD5AE2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User Interface", "User Interface", "{7A9588AC-33BF-4EA0-988B-04BA70D8F674}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,17 +27,22 @@ Global
 		{A90A0E0E-EACE-4AAD-B428-25AFBF0E9A8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A90A0E0E-EACE-4AAD-B428-25AFBF0E9A8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A90A0E0E-EACE-4AAD-B428-25AFBF0E9A8B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51E8929C-546B-49BB-A44C-016BF613F2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51E8929C-546B-49BB-A44C-016BF613F2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51E8929C-546B-49BB-A44C-016BF613F2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51E8929C-546B-49BB-A44C-016BF613F2DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0994492C-2E34-46A9-8995-E4532E7C3301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0994492C-2E34-46A9-8995-E4532E7C3301}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0994492C-2E34-46A9-8995-E4532E7C3301}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0994492C-2E34-46A9-8995-E4532E7C3301}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD26BD3-6363-4BA6-B3A6-258916D58FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD26BD3-6363-4BA6-B3A6-258916D58FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD26BD3-6363-4BA6-B3A6-258916D58FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD26BD3-6363-4BA6-B3A6-258916D58FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7181368B-6957-4D99-82A2-5CA646CD5AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7181368B-6957-4D99-82A2-5CA646CD5AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7181368B-6957-4D99-82A2-5CA646CD5AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7181368B-6957-4D99-82A2-5CA646CD5AE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A90A0E0E-EACE-4AAD-B428-25AFBF0E9A8B} = {35D8E867-F875-4DC9-8761-208412E71C3F}
+		{6DD26BD3-6363-4BA6-B3A6-258916D58FC2} = {9BD2C931-4417-48EF-AAA7-B50DC5CB61A1}
+		{7181368B-6957-4D99-82A2-5CA646CD5AE2} = {E1D205CF-D57F-42CC-9BCE-0C7CBC6E8A7C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {533B3C17-A67E-4D11-ACCB-63223831F3A3}
